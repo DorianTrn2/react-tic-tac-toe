@@ -1,0 +1,88 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.status {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.board {
+  background: #fff;
+  border: 2px solid #999;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.board-row {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.board-row:last-child {
+  margin-bottom: 0;
+}
+
+.square {
+  background: #fff;
+  border: 2px solid #999;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 4px;
+  padding: 0;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.square:hover {
+  background-color: #e4f3dd;
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
+.square.filled:hover {
+  background-color: #ecd8d8;
+}
+
+.reset-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.reset-button:hover {
+  background-color: #45a049;
+} 
+
+@keyframes main-animation{
+0%{background-color: #4CAF50;}
+50%{background-color: #97c498;}
+100%{background-color: #4CAF50;}
+}
+
+.reset-button:hover{
+  animation: main-animation 0.7s infinite;
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
+@keyframes square-animation{
+  0%{background-color: #ffffff;}
+  50%{background-color: #657fc7;}
+  100%{background-color: #ffffff;}
+} 

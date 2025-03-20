@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #61dafb;
+  animation: title-animation 2s infinite;
+}
+
+@keyframes title-animation{ 
+  0%{color: #61dafb; letter-spacing: 0.1rem;}
+  50%{color: #3249ad; letter-spacing: 0.15rem;}
+  100%{color: #61dafb; letter-spacing: 0.1rem;}
+}
